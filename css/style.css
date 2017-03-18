@@ -120,3 +120,18 @@
 	transform: scale(1.1,1.1);;
 }
 
+
+/*-----start style contact page-----*/
+     /*-----style form section------*/
+ 
+#forme
+{
+	width: 100%;
+	height: 500px;
+	background-image: url("images/p24.jpg");
+}
+ .formulaire
+ {
+ 	width: 80%;
+
+ }
