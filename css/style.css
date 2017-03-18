@@ -8,7 +8,7 @@
 {
 	width: 100%;
 	height: 80px;
-	/*background-color:*/ 
+	/*background-color:rgb(109,96,88); */
 }
 .header h1 
 {
@@ -16,10 +16,10 @@
 	font-size:40px;
 	/*margin-left: 50px;*/
 	margin:10px 30%;
+	animation: 10s bouge alternate infinite;
 
-
-	
 }
+
 .header h1 span
 {
 	font-family: "Gravitas One" /*,"Slackey"*/;
@@ -29,6 +29,16 @@
 .header h1 sub
 {
 	vertical-align:super;
+	color: black;
+}
+@keyframes bouge
+{
+	from{
+		margin:10px 30%;
+	}
+	to{
+		margin:10px 0%;
+	}
 }
 .header .inl
 {
@@ -77,6 +87,7 @@
 .slider{
 	width: 100%;
 	height: 350px;
+	margin-bottom:40px;
 }
 .galerie
 {
