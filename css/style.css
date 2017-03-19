@@ -40,7 +40,7 @@
 		margin:10px 0%;
 	}
 }
-.header .inl
+.header .inl, .info
 {
 	display: inline-block;
 	vertical-align: middle;
@@ -128,21 +128,22 @@
 {
 	width: 100%;
 	height: 500px;
-	/*background-image:  url("images/p25.jpeg") repeat-x fixed ;
- 	background-size:cover;*/
+	
+ 	/*background-size:cover;*/
  	margin-top: 0px;
  	
 }
 .formulaire
 {
 	vertical-align:top;
+
 }
 .formulaire, .map
  {
  	width:45%;
 	/*rgba(98,96,97,0.2);*/
-	height: 500px;
-	margin-left:10px;
+	height:100%;
+	margin:0 2%;
 	margin-top: 10px;
 	
  }
@@ -150,9 +151,12 @@
  {
  	width:100%;
  	height: 100%;
- 	padding: 0px;
- 	margin-left:20px;
+ 	padding-left: 30px;
  	
+ 	background-image:  url(../images/p25.jpeg) ;
+	 background-size: contain;
+ 	/*background-size: cover;*/
+ 	border-radius: 5px;
  	}
  .formulaire .inp input ,.formulaire .inp textarea ,.formulaire .inp button
  {
@@ -173,11 +177,17 @@
 }
 .formulaire .inp .envoyer
 {
-	background-color: rgb(63,186,235);
+	background-color: rgb(124,141,124);
 	border-radius: 3px;
 	font-weight: bold;
 	margin-top: 20px;
 }
+.formulaire .inp input:focus ,.formulaire .inp textarea:focus, .formulaire .nomp input:focus
+{
+	box-shadow: 4px 4px 4px rgb(131,100,71);
+	border-color: rgb(131,100,71);	
+}
+
 /*-----style google map------*/
 .map
 {
@@ -195,10 +205,52 @@
 .info-entre
 {
 	width: 100%;
-	height: 50px;
-	background-color: red;
+	height: 100px;
+	
 }
-.info-entre p
+.info-entre .info
 {
+  width: 45%;
+  margin:10px 1%;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 30px;
+  color: rgb(38,76,89);
+  text-decoration: underline;
 
 }
+
+
+/*-----------style tarif page------*/
+.tarif-section
+{
+	width: 100%;
+	height: 400px;
+
+}
+
+.image-piscine
+{
+	width: 50%;
+	height:400px;
+	background-image: url(../images/piscine11.jpg);
+	background-origin: content-box;
+	background-size: cover;
+	border-radius: 7px;
+	background-color:transparent;
+	
+	
+	
+}
+.image-piscine p
+{
+	font-weight:bold;
+	font-style:italic;
+	padding-top:20px;
+	font-size:18px;
+	word-spacing: 5px;
+	text-indent: 15px;
+	letter-spacing: 3px;
+	line-height: 1.2;
+	color:#000;
+	}
