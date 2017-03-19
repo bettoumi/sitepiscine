@@ -16,7 +16,7 @@
 	font-size:40px;
 	/*margin-left: 50px;*/
 	margin:10px 30%;
-	animation: 10s bouge alternate infinite;
+	animation: 8s bouge alternate infinite;
 
 }
 
@@ -128,10 +128,77 @@
 {
 	width: 100%;
 	height: 500px;
-	background-image: url("images/p24.jpg");
+	/*background-image:  url("images/p25.jpeg") repeat-x fixed ;
+ 	background-size:cover;*/
+ 	margin-top: 0px;
+ 	
 }
- .formulaire
+.formulaire
+{
+	vertical-align:top;
+}
+.formulaire, .map
+ {
+ 	width:45%;
+	/*rgba(98,96,97,0.2);*/
+	height: 500px;
+	margin-left:10px;
+	margin-top: 10px;
+	
+ }
+ .formulaire form
+ {
+ 	width:100%;
+ 	height: 100%;
+ 	padding: 0px;
+ 	margin-left:20px;
+ 	
+ 	}
+ .formulaire .inp input ,.formulaire .inp textarea ,.formulaire .inp button
  {
  	width: 80%;
-
+ 	padding: 3px;
+ 	margin-bottom: 10px;
  }
+ .formulaire .nomp input
+ {
+ 	width:39.2%;
+ 	margin-right: 0px;
+ 	margin-bottom: 15px;
+ 	margin-top: 20px;
+ }
+.formulaire .inp textarea
+{
+	height: 60px;
+}
+.formulaire .inp .envoyer
+{
+	background-color: rgb(63,186,235);
+	border-radius: 3px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+/*-----style google map------*/
+.map
+{
+	display: inline-block;
+
+}
+.map iframe
+{
+   width: 100%;
+   height: 95%;
+}
+
+
+/*---------style info-entreprise section----*/ 
+.info-entre
+{
+	width: 100%;
+	height: 50px;
+	background-color: red;
+}
+.info-entre p
+{
+
+}
