@@ -147,7 +147,7 @@ footer
 .formulaire
 {
 	vertical-align:top;
-	background-image:  url(../images/p28.jpg) ;
+	background-image:  url(../images/p30.jpg) ;
 	
  	background-size: cover;
 
@@ -174,8 +174,11 @@ footer
  .formulaire .inp input ,.formulaire .inp textarea ,.formulaire .inp button
  {
  	width: 80%;
- 	padding: 3px;
+ 	padding: 5px;
  	margin-bottom: 10px;
+ 	box-shadow: 2px 2px 2px black;
+ 	border-radius: 3px;
+ 	border :1px solid black;
  }
  .formulaire .nomp input
  {
@@ -183,6 +186,10 @@ footer
  	margin-right: 0px;
  	margin-bottom: 15px;
  	margin-top: 20px;
+ 	border :1px solid black;
+ 	box-shadow: 2px 2px 2px black;
+ 	padding: 5px;
+ 	border-radius: 3px;
  }
 .formulaire .inp textarea
 {
@@ -194,6 +201,7 @@ footer
 	border-radius: 3px;
 	font-weight: bold;
 	margin-top: 20px;
+	color:black;
 }
 .formulaire .inp input:focus ,.formulaire .inp textarea:focus, .formulaire .nomp input:focus
 {
@@ -307,3 +315,28 @@ footer
 
 }
 
+
+
+/*--------Start style Devis page------*/
+
+.devis
+{
+  width: 100%;
+  height: 600px;
+  
+  background-size:
+  margin-top: 0px;	
+}
+.demdevis
+{
+	width: 98%;
+	height: 100%;
+	margin:10px auto;
+	padding-left: 30px;
+	color: black;
+	background: radial-gradient(rgba(49,176,213,1), rgba(255,255,255,0.2));
+	border:2px solid black;
+	border-radius: 10px;
+
+
+}
