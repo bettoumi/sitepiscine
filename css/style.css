@@ -58,8 +58,9 @@
 {
    width: 100%;
    height: 50px;
-   background:linear-gradient( to left , rgba(63,186,235,0),rgba(100,120,100,1));
+   background:radial-gradient( rgba(63,186,235,0),rgba(100,120,100,1));
 }
+
 
 .menu ul li
 {
@@ -120,6 +121,17 @@
 	transform: scale(1.1,1.1);;
 }
 
+  /*---style footer  section----*/
+
+footer
+{
+	height: 70px;
+	width: 100%;
+	background:radial-gradient( rgba(63,186,235,0),rgba(100,120,100,1));
+	text-align: center;
+	padding-top:10px;
+}
+
 
 /*-----start style contact page-----*/
      /*-----style form section------*/
@@ -127,24 +139,27 @@
 #forme
 {
 	width: 100%;
-	height: 500px;
+	height: 550px;
 	
- 	/*background-size:cover;*/
  	margin-top: 0px;
  	
 }
 .formulaire
 {
 	vertical-align:top;
+	background-image:  url(../images/p28.jpg) ;
+	
+ 	background-size: cover;
 
 }
 .formulaire, .map
  {
  	width:45%;
 	/*rgba(98,96,97,0.2);*/
-	height:100%;
+	height:90%;
 	margin:0 2%;
 	margin-top: 10px;
+	display:inline-block;
 	
  }
  .formulaire form
@@ -152,12 +167,10 @@
  	width:100%;
  	height: 100%;
  	padding-left: 30px;
- 	
- 	background-image:  url(../images/p25.jpeg) ;
-	 background-size: contain;
- 	/*background-size: cover;*/
  	border-radius: 5px;
- 	}
+
+ }
+
  .formulaire .inp input ,.formulaire .inp textarea ,.formulaire .inp button
  {
  	width: 80%;
@@ -189,11 +202,7 @@
 }
 
 /*-----style google map------*/
-.map, .bloc
-{
-	display: inline-block;
 
-}
 .map iframe
 {
    width: 100%;
@@ -202,10 +211,17 @@
 
 
 /*---------style info-entreprise section----*/ 
+.bloc
+{
+	display: inline-block;
+
+}
+
 .info-entre
 {
 	width: 100%;
 	height: 100px;
+	margin-bottom: 20px;
 	
 }
 .info-entre .info
@@ -226,6 +242,7 @@
 {
 	width: 100%;
 	height: 400px;
+	margin-bottom:100px;
 
 }
 
@@ -289,3 +306,4 @@
 	background-color: rgb(168,222,234);
 
 }
+
