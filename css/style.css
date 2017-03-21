@@ -1,20 +1,30 @@
+/*-----start commun style---*/
+
 *{
 	margin:0;
 	padding: 0;
 	box-sizing: border-box;
 
 }
+ .menu ul li,.header .inl, .info ,.galerie ,.formulaire, .map ,.bloc
+{
+	display:inline-block;
+}
+
+
+/*------start header style---------*/
+
 .header
 {
 	width: 100%;
 	height: 80px;
-	/*background-color:rgb(109,96,88); */
+
 }
 .header h1 
 {
 	font-family: "Ultra";
 	font-size:40px;
-	/*margin-left: 50px;*/
+
 	margin:10px 30%;
 	animation: 8s bouge alternate infinite;
 
@@ -24,7 +34,7 @@
 {
 	font-family: "Gravitas One" /*,"Slackey"*/;
 	font-size:40px;
-	color:rgb(63,186,235);
+	color:#8eb8e5;
 }
 .header h1 sub
 {
@@ -42,7 +52,7 @@
 }
 .header .inl, .info
 {
-	display: inline-block;
+	
 	vertical-align: middle;
 }
 .header a
@@ -51,6 +61,14 @@
 	margin-top: 10px;
 	margin-right: 30px;
 }
+.header a i
+{ 
+	vertical-align: middle;
+ }
+ .header a button
+ {
+ 	color: black;
+ }
 
 /*--------start nav style------*/
 
@@ -58,21 +76,20 @@
 {
    width: 100%;
    height: 50px;
-   background:radial-gradient( rgba(63,186,235,0),rgba(100,120,100,1));
+   background:#7c99b4;
 }
 
 
 .menu ul li
 {
 	list-style-type: none;
-	display: inline-block;
 	margin:15px 10%;
 	vertical-align: middle;
 }
 .menu ul li a
 {
 	text-decoration: none;
-	color: #5b5750;
+	color: white;
 	font-weight: bold;
 	transition: 0.5s;
 }
@@ -83,38 +100,64 @@
 }
 
 
+/*---------start Qui-nous section--------*/
+ 
+ .qui-nous
+ {
+ 	width :100%;
+ 	margin-top:80px;
+ 	height: 40px;
+ 	text-align: center;
+ 	font-style: italic;
+ 	font-weight: bold;
+ 	font-family: "Droid+Serif"
+ }
+ .qui-nous i
+ {
+	color:rgb(142,186,234);
+	font-weight: bold;
+ }
 
-/*-------start slider section-----*/
+
+
+
+/*-------start slider section-------------*/
 .slider{
 	width: 100%;
 	height: 350px;
-	margin-bottom:40px;
+	margin:60px auto;
 }
 .galerie
 {
-	display:inline-block;
-	width: 24%;
+	
+	width: 25%;
 	height: 100%;
 	border:1px solid transparent;
-	margin: 20px 0.3%;
-	margin-left: 5px;
-	border-radius: 10px;
-	box-shadow: 2px 2px rgba(100,120,100,1);
-	background-color: #cfd6ea;
-
+	margin: 30px 3.3%;
+	margin-left:40px;
+	border-radius: 2px;
+	box-shadow: 3px 3px rgba(100,120,100,1);
+	background-color: rgb(233,234,229);
 }
 .galerie img
 {
 	width: 100%;
-	height: 90%;
-	border-radius: 10px;
+	height:70%;
+	border-radius: 3px;
 }
-.galerie h3
+.galerie p
 {
-	font-size: 12px;
+	font-size:13px;
 	font-style: italic;
-	text-align: center;
-	padding-bottom:5px;
+	text-align: left;
+	font-weight: bold;
+	padding-top: 5px;
+	margin-left: 10px;
+	
+}
+.galerie i
+{
+	font-size: 10px;
 }
 .galerie:hover
 {
@@ -125,12 +168,27 @@
 
 footer
 {
-	height: 70px;
+	height: 50px;
 	width: 100%;
-	background:radial-gradient( rgba(63,186,235,0),rgba(100,120,100,1));
+	background:#7c99b4;
 	text-align: center;
+	margin-top: 100px;
 	padding-top:10px;
 }
+footer i, footer .copy
+{
+	margin-right: 20px;
+}
+footer .menu2
+{
+	float: left;
+
+}
+footer .menu2 a
+{
+	color: black;
+}
+
 
 
 /*-----start style contact page-----*/
@@ -152,16 +210,15 @@ footer
  	background-size: cover;
 
 }
+
 .formulaire, .map
  {
  	width:45%;
-	/*rgba(98,96,97,0.2);*/
 	height:90%;
 	margin:0 2%;
 	margin-top: 10px;
-	display:inline-block;
-	
  }
+
  .formulaire form
  {
  	width:100%;
@@ -219,11 +276,7 @@ footer
 
 
 /*---------style info-entreprise section----*/ 
-.bloc
-{
-	display: inline-block;
 
-}
 
 .info-entre
 {
@@ -251,6 +304,7 @@ footer
 	width: 100%;
 	height: 400px;
 	margin-bottom:100px;
+	margin-top:30px;
 
 }
 
@@ -317,15 +371,15 @@ footer
 
 
 
+
 /*--------Start style Devis page------*/
 
 .devis
 {
-  width: 100%;
-  height: 600px;
-  
-  background-size:
-  margin-top: 0px;	
+  width: 90%;
+  height: 730px;
+  margin:80px auto;
+ 
 }
 .demdevis
 {
@@ -334,9 +388,66 @@ footer
 	margin:10px auto;
 	padding-left: 30px;
 	color: black;
-	background: radial-gradient(rgba(49,176,213,1), rgba(255,255,255,0.2));
-	border:2px solid black;
-	border-radius: 10px;
-
+	background-color: rgb(233,234,229);
+	border:2px solid transparent;
+	border-radius:5px;
 
 }
+.demdevis h3
+{
+	font-size: 24px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+}
+.demdevis p
+{
+	text-align: justify;
+	font-weight: bold;
+	font-size: 18px;
+}
+.demdevis .suivant
+{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 20px;
+}
+.demdevis i
+{
+	vertical-align: middle;
+	font-size:30px;
+	margin-right: 10px;
+
+}
+.demdevis button
+{
+	
+	background-color: rgb(142,184,229);
+	color:black;
+	font-style: italic;
+	font-weight: bold;
+	border-radius: 8px;
+	margin:0 40%;
+	font-size: 18px;
+	padding:13px;
+}
+.demdevis ol
+{
+	margin:10px 3%;
+	
+	font-size: 18px;
+	font-weight: bold;
+}
+.demdevis ol li
+{
+	padding: 5px ;
+	font-style: italic;
+}
+.demdevis a
+{
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+}
+
